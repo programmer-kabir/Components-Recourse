@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="relative mx-16">
+      <!-- Button/Trigger -->
+      <button
+        onclick="toggleDropdown()"
+        id="dropdownBtn"
+        class="text-white px-4 w-48 py-2 gap-3 rounded flex items-center"
+      > 
+        <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1620428268482-cf1851a36764?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1409&q=80" alt="">
+        <svg id="openIcon" color="black" class="h-6 w-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+        <svg id="closeIcon" color="black" class="h-6 w-6 inline-block hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Dropdown Content -->
+      <div id="dropdownContent" class="absolute left-0 mt-2 w-48 bg-gray-200 border rounded shadow-2xl  border-gray-100 transform scale-0 origin-top transition-transform duration-200">
+        <a class="block px-4 py-2 hover:bg-gray-400 rounded hover:text-white">Profile</a>
+        <a class="block px-4 py-2 hover:bg-gray-400 rounded hover:text-white">Dashboard</a>
+        <a class="block px-4 py-2 hover:bg-gray-400 rounded hover:text-white">Update</a>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
